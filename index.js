@@ -1,51 +1,5 @@
 const fs = require('fs');
-const readline = require('readline');
 
-
-
-// toJSON=()=>{
-    
-// // קריאת קובץ הטקסט
-// const fileStream = fs.createReadStream('./file.strings');
-
-// const rl = readline.createInterface({
-//     input: fileStream,
-//     crlfDelay: Infinity
-// });
-
-// // מערך שבו נאחסן את התוצאה
-// const result = [];
-
-// rl.on('line', (line) => {
-//     // פיצול השורה למפתח וערך
-//     const [key, value] = line.split('=');
-//     const fixedValue = value.replace(/[";]/g, '');
-//     const fixedKey = key.replace(/"/g, '');
-//     // יצירת אובייקט המייצג את השורה
-//     const obj = {
-//         [fixedKey.trim()]: fixedValue.trim(),
-//     };
-
-
-//     // הוספת האובייקט למערך התוצאה
-//     result.push(obj);
-// });
-
-// rl.on('close', () => {
-//     // המרת התוצאה למחרוזת JSON
-//     const jsonResult = JSON.stringify(result, null, 2);
-//     console.log(jsonResult);
-//     // כתיבת התוצאה לקובץ
-//     fs.writeFile('./output.json', jsonResult, (err) => {
-//         if (err) {
-//             console.error('אירעה שגיאה בכתיבת הקובץ:', err);
-//             return;
-//         }
-//         console.log('המרה הושלמה בהצלחה!');
-//     });
-// });
-
-// }
 
 
 toJSON=()=>{
